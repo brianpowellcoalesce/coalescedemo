@@ -1,0 +1,79 @@
+steps:
+  CRM2_NATION-ca20f5df-62dc-4b6c-a7a4-3b51a67a1b22:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: CRM2
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 977afd27-8e79-4825-ac1a-64aea15f5cb1
+              stepCounter: ca20f5df-62dc-4b6c-a7a4-3b51a67a1b22
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: N_NATIONKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: a5049244-69a7-4ea0-94fc-c6859409e455
+              stepCounter: ca20f5df-62dc-4b6c-a7a4-3b51a67a1b22
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: N_NAME
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5cfe77a0-2235-45f3-a7be-5fa1e16aae2c
+              stepCounter: ca20f5df-62dc-4b6c-a7a4-3b51a67a1b22
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: N_REGIONKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: a5579731-5829-4308-8d22-3f03aa981ebd
+              stepCounter: ca20f5df-62dc-4b6c-a7a4-3b51a67a1b22
+            config: {}
+            dataType: VARCHAR(152)
+            defaultValue: ""
+            description: ""
+            name: N_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('CRM2', 'CRM2_NATION') }}
+      name: CRM2_NATION
+      schema: ""
+      sqlType: Source
+      table: CRM2_NATION
+      type: sourceInput
+    stepCounter: ca20f5df-62dc-4b6c-a7a4-3b51a67a1b22

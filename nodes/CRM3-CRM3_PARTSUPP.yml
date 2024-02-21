@@ -1,0 +1,94 @@
+steps:
+  CRM3_PARTSUPP-7585fdeb-5cb5-411f-b97b-67707bdff2fa:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: CRM3
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 709a86bc-daca-4be3-bee2-6433bc471cff
+              stepCounter: 7585fdeb-5cb5-411f-b97b-67707bdff2fa
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: PS_PARTKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 4700e456-d9ee-4d8c-b3fa-bd5984ad3e35
+              stepCounter: 7585fdeb-5cb5-411f-b97b-67707bdff2fa
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: PS_SUPPKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 68ba8201-8913-426b-98ae-3ba7fe5e6fcb
+              stepCounter: 7585fdeb-5cb5-411f-b97b-67707bdff2fa
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: PS_AVAILQTY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 4e2f09fd-2b71-422c-8628-1b035518f2b7
+              stepCounter: 7585fdeb-5cb5-411f-b97b-67707bdff2fa
+            config: {}
+            dataType: NUMBER(12,2)
+            defaultValue: ""
+            description: ""
+            name: PS_SUPPLYCOST
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c9085978-e46e-4258-b0e3-1ab1d005ddbb
+              stepCounter: 7585fdeb-5cb5-411f-b97b-67707bdff2fa
+            config: {}
+            dataType: VARCHAR(199)
+            defaultValue: ""
+            description: ""
+            name: PS_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('CRM3', 'CRM3_PARTSUPP') }}
+      name: CRM3_PARTSUPP
+      schema: ""
+      sqlType: Source
+      table: CRM3_PARTSUPP
+      type: sourceInput
+    stepCounter: 7585fdeb-5cb5-411f-b97b-67707bdff2fa

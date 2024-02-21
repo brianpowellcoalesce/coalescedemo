@@ -1,0 +1,106 @@
+steps:
+  V_ORDERS-280:
+    operation:
+      config:
+        insertStrategy: UNION
+        selectDistinct: false
+      database: ""
+      dependencies: []
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationID: 2
+      locationName: STG
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: "3782"
+              stepCounter: "280"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: O_ORDERKEY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3164
+                    stepCounter: "242"
+                transform: ""
+          - columnReference:
+              columnCounter: "3783"
+              stepCounter: "280"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: O_CUSTKEY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3165
+                    stepCounter: "242"
+                transform: ""
+          - columnReference:
+              columnCounter: "3784"
+              stepCounter: "280"
+            dataType: VARCHAR(1)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: O_ORDERSTATUS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3166
+                    stepCounter: "242"
+                transform: ""
+          - columnReference:
+              columnCounter: "3785"
+              stepCounter: "280"
+            dataType: NUMBER(12,2)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: O_TOTALPRICE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3167
+                    stepCounter: "242"
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: |-
+                {{ stage('Override Create SQL') }}
+                	CREATE OR REPLACE VIEW {{ ref('STG', 'V_ORDERS')}} AS (
+                		SELECT 
+                 O_ORDERKEY AS O_ORDERKEY,
+                 O_CUSTKEY AS O_CUSTKEY,
+                 O_ORDERSTATUS AS O_ORDERSTATUS,
+                 O_TOTALPRICE AS O_TOTALPRICE,
+                 O_ORDERDATE AS O_ORDERDATE,
+                 O_ORDERPRIORITY AS O_ORDERPRIORITY,
+                 O_CLERK AS O_CLERK,
+                 O_SHIPPRIORITY AS O_SHIPPRIORITY,
+                 O_COMMENT AS O_COMMENT
+                 FROM {{ ref('STG', 'STG_ORDERS') }}
+                	)
+            dependencies:
+              - locationName: STG
+                nodeName: STG_ORDERS
+            join:
+              joinCondition: FROM {{ ref('STG', 'STG_ORDERS') }} "STG_ORDERS"
+            name: V_ORDERS
+            noLinkRefs: []
+      name: V_ORDERS
+      overrideSQL: true
+      schema: ""
+      sqlType: View
+      type: sql
+    stepCounter: "280"

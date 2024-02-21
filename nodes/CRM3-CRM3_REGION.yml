@@ -1,0 +1,64 @@
+steps:
+  CRM3_REGION-4d71c6fa-4954-46f3-9790-740f85a8b4d7:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: CRM3
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 31baa342-985a-4d6e-bfd4-2a72fdd00c40
+              stepCounter: 4d71c6fa-4954-46f3-9790-740f85a8b4d7
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: R_REGIONKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: deaa2ddd-cc32-4b6b-83c9-e8a63e69dda1
+              stepCounter: 4d71c6fa-4954-46f3-9790-740f85a8b4d7
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: R_NAME
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b270e9f6-4cb7-4a77-955d-8a43a1288638
+              stepCounter: 4d71c6fa-4954-46f3-9790-740f85a8b4d7
+            config: {}
+            dataType: VARCHAR(152)
+            defaultValue: ""
+            description: ""
+            name: R_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('CRM3', 'CRM3_REGION') }}
+      name: CRM3_REGION
+      schema: ""
+      sqlType: Source
+      table: CRM3_REGION
+      type: sourceInput
+    stepCounter: 4d71c6fa-4954-46f3-9790-740f85a8b4d7

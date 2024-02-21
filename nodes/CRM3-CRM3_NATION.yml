@@ -1,0 +1,79 @@
+steps:
+  CRM3_NATION-419d9587-a71c-4b6c-ae5f-c69fde43e4e2:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: CRM3
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: e9c4a0b2-eb7e-4328-befa-f90b4b80b758
+              stepCounter: 419d9587-a71c-4b6c-ae5f-c69fde43e4e2
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: N_NATIONKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 53d52b26-7a94-49d7-bb16-d8eae1a01cfe
+              stepCounter: 419d9587-a71c-4b6c-ae5f-c69fde43e4e2
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: N_NAME
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b3dafc97-6ff1-4a79-a3fb-89c520a580e9
+              stepCounter: 419d9587-a71c-4b6c-ae5f-c69fde43e4e2
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: N_REGIONKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: ea3e217e-a3ff-486a-9be7-7ddd0a299e22
+              stepCounter: 419d9587-a71c-4b6c-ae5f-c69fde43e4e2
+            config: {}
+            dataType: VARCHAR(152)
+            defaultValue: ""
+            description: ""
+            name: N_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('CRM3', 'CRM3_NATION') }}
+      name: CRM3_NATION
+      schema: ""
+      sqlType: Source
+      table: CRM3_NATION
+      type: sourceInput
+    stepCounter: 419d9587-a71c-4b6c-ae5f-c69fde43e4e2

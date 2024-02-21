@@ -1,0 +1,64 @@
+steps:
+  CRM2_REGION-209ae1fb-dd9d-48bf-91d2-a845a276e0fd:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: CRM2
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 0f9faf5f-681e-4a9c-8d98-7d5e9a328aa0
+              stepCounter: 209ae1fb-dd9d-48bf-91d2-a845a276e0fd
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: R_REGIONKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d2b61ba8-049e-48ff-a92a-2213b3bc6742
+              stepCounter: 209ae1fb-dd9d-48bf-91d2-a845a276e0fd
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: R_NAME
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 9c930715-5a46-4157-96f2-00578001aeac
+              stepCounter: 209ae1fb-dd9d-48bf-91d2-a845a276e0fd
+            config: {}
+            dataType: VARCHAR(152)
+            defaultValue: ""
+            description: ""
+            name: R_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('CRM2', 'CRM2_REGION') }}
+      name: CRM2_REGION
+      schema: ""
+      sqlType: Source
+      table: CRM2_REGION
+      type: sourceInput
+    stepCounter: 209ae1fb-dd9d-48bf-91d2-a845a276e0fd

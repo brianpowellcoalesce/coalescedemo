@@ -1,0 +1,173 @@
+steps:
+  ACQ_STG_NATION_REGION-b50641b2-7f47-4517-ba89-3bc7c8759815:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: true
+      locationName: STG
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 8d10a3fc-4e52-4d4f-be35-d9bc019312e7
+              stepCounter: b50641b2-7f47-4517-ba89-3bc7c8759815
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: N_NATIONKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 366900b4-eff9-41d7-9c5f-7fe04bbfee59
+                    stepCounter: dcdeaf66-6681-4297-bdfb-b8fe3a5bd6e6
+                transform: ""
+              - columnReferences:
+                  - columnCounter: c198e09f-ea4b-4745-beb3-880ad05c3d20
+                    stepCounter: 36970ef8-a1a1-4fdc-b73f-e0c3b8b59e84
+                transform: ""
+          - columnReference:
+              columnCounter: 16e3cfcc-525c-451c-b5ba-8a668f3c5565
+              stepCounter: b50641b2-7f47-4517-ba89-3bc7c8759815
+            dataType: VARCHAR(25)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: N_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 938b09b1-11e3-4f0b-9977-ffac9d0cc9c8
+                    stepCounter: dcdeaf66-6681-4297-bdfb-b8fe3a5bd6e6
+                transform: ""
+              - columnReferences:
+                  - columnCounter: d5ec935f-d35d-4da5-ba41-2a0b9092208b
+                    stepCounter: 36970ef8-a1a1-4fdc-b73f-e0c3b8b59e84
+                transform: ""
+          - columnReference:
+              columnCounter: 979fc9c6-dc8f-437a-8ab4-7172d7162cf4
+              stepCounter: b50641b2-7f47-4517-ba89-3bc7c8759815
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: N_REGIONKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3bad6e02-376d-449f-afa6-e3b3227dbf47
+                    stepCounter: dcdeaf66-6681-4297-bdfb-b8fe3a5bd6e6
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 42fea4ff-1392-4ba4-a0bf-65b88fe34dd1
+                    stepCounter: 36970ef8-a1a1-4fdc-b73f-e0c3b8b59e84
+                transform: ""
+          - columnReference:
+              columnCounter: a23d00f9-eadc-43ac-b1f0-e1561352b5e8
+              stepCounter: b50641b2-7f47-4517-ba89-3bc7c8759815
+            dataType: VARCHAR(152)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: N_COMMENT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 813bd3ec-b335-4d87-8f04-350eab2537fb
+                    stepCounter: dcdeaf66-6681-4297-bdfb-b8fe3a5bd6e6
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 565733b6-cd5f-4962-abc4-d806267d7e5a
+                    stepCounter: 36970ef8-a1a1-4fdc-b73f-e0c3b8b59e84
+                transform: ""
+          - columnReference:
+              columnCounter: e0bf0bc7-4afc-49ad-a8f6-0abf37aa4bb5
+              stepCounter: b50641b2-7f47-4517-ba89-3bc7c8759815
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: R_REGIONKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 7b563b0b-1308-40da-b270-e6caf08e63b5
+                    stepCounter: dcdeaf66-6681-4297-bdfb-b8fe3a5bd6e6
+                transform: ""
+              - columnReferences:
+                  - columnCounter: a4eb7586-2328-4652-85f6-ed5cf3588a55
+                    stepCounter: 36970ef8-a1a1-4fdc-b73f-e0c3b8b59e84
+                transform: ""
+          - columnReference:
+              columnCounter: 89a2b904-b9b6-4c6c-a048-193604e5722b
+              stepCounter: b50641b2-7f47-4517-ba89-3bc7c8759815
+            dataType: VARCHAR(25)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: R_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: dce9de6d-bb60-4cc4-8c67-09f9e68524a7
+                    stepCounter: dcdeaf66-6681-4297-bdfb-b8fe3a5bd6e6
+                transform: ""
+              - columnReferences:
+                  - columnCounter: ef467c07-88eb-4dfd-860e-d62d2baaa82b
+                    stepCounter: 36970ef8-a1a1-4fdc-b73f-e0c3b8b59e84
+                transform: ""
+          - columnReference:
+              columnCounter: 07c95de1-287d-46dd-a11a-9e01bdb1800e
+              stepCounter: b50641b2-7f47-4517-ba89-3bc7c8759815
+            dataType: VARCHAR(152)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: R_COMMENT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: c15c31d9-2419-4ce2-b765-59067395f11a
+                    stepCounter: dcdeaf66-6681-4297-bdfb-b8fe3a5bd6e6
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 9850d1e4-47ea-49f2-a5bd-a755ff04a79f
+                    stepCounter: 36970ef8-a1a1-4fdc-b73f-e0c3b8b59e84
+                transform: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STG
+                nodeName: STG_NATION_REGION
+            join:
+              joinCondition: FROM {{ ref('STG', 'STG_NATION_REGION') }} "STG_NATION_REGION"
+            name: ACQ_STG_NATION_REGION
+            noLinkRefs: []
+          - aliases:
+              STG_CRM23_REGION_NATION: 36970ef8-a1a1-4fdc-b73f-e0c3b8b59e84
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STG
+                nodeName: STG_CRM23_REGION_NATION
+            join:
+              joinCondition: FROM {{ ref('STG', 'STG_CRM23_REGION_NATION') }} "STG_CRM23_REGION_NATION"
+            name: NEW_SOURCE
+            noLinkRefs: []
+      name: ACQ_STG_NATION_REGION
+      overrideSQL: false
+      schema: ""
+      sqlType: "46"
+      type: sql
+    stepCounter: b50641b2-7f47-4517-ba89-3bc7c8759815

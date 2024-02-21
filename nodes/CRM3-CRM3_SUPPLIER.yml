@@ -1,0 +1,124 @@
+steps:
+  CRM3_SUPPLIER-ed2ab3c3-e302-48a0-95c5-7b502bbc6368:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: CRM3
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 59e5c427-58d3-4f74-a33c-90ed75867446
+              stepCounter: ed2ab3c3-e302-48a0-95c5-7b502bbc6368
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: S_SUPPKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: a902717e-416d-47be-a874-5d15c11376dc
+              stepCounter: ed2ab3c3-e302-48a0-95c5-7b502bbc6368
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: S_NAME
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 090bcd96-856f-4d07-be3a-b036bbbb08c0
+              stepCounter: ed2ab3c3-e302-48a0-95c5-7b502bbc6368
+            config: {}
+            dataType: VARCHAR(40)
+            defaultValue: ""
+            description: ""
+            name: S_ADDRESS
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 099d13b8-0b9c-47af-8b2a-a0cac24a58bb
+              stepCounter: ed2ab3c3-e302-48a0-95c5-7b502bbc6368
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: S_NATIONKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 924ba21e-5097-40aa-8033-713f252a1ec3
+              stepCounter: ed2ab3c3-e302-48a0-95c5-7b502bbc6368
+            config: {}
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: S_PHONE
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 18865f38-9ed8-4791-bc00-21953b24c6cc
+              stepCounter: ed2ab3c3-e302-48a0-95c5-7b502bbc6368
+            config: {}
+            dataType: NUMBER(12,2)
+            defaultValue: ""
+            description: ""
+            name: S_ACCTBAL
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c45d65d5-7532-4dc1-a7b1-90bc4630fc00
+              stepCounter: ed2ab3c3-e302-48a0-95c5-7b502bbc6368
+            config: {}
+            dataType: VARCHAR(101)
+            defaultValue: ""
+            description: ""
+            name: S_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('CRM3', 'CRM3_SUPPLIER') }}
+      name: CRM3_SUPPLIER
+      schema: ""
+      sqlType: Source
+      table: CRM3_SUPPLIER
+      type: sourceInput
+    stepCounter: ed2ab3c3-e302-48a0-95c5-7b502bbc6368

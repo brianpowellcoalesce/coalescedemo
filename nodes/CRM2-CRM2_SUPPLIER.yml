@@ -1,0 +1,124 @@
+steps:
+  CRM2_SUPPLIER-809ae077-b7ac-45c3-8443-a3ef7e064244:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: CRM2
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 4993300d-b5e5-403e-8e48-54b71e3cfc9b
+              stepCounter: 809ae077-b7ac-45c3-8443-a3ef7e064244
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: S_SUPPKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 4a540573-0c9d-491c-8df0-e7e8a5ca4d0a
+              stepCounter: 809ae077-b7ac-45c3-8443-a3ef7e064244
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: S_NAME
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 4888e739-1bf2-4d2e-843e-66864cbcb152
+              stepCounter: 809ae077-b7ac-45c3-8443-a3ef7e064244
+            config: {}
+            dataType: VARCHAR(40)
+            defaultValue: ""
+            description: ""
+            name: S_ADDRESS
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 78fa1781-b8ad-468d-a78f-3b8d8c0e6670
+              stepCounter: 809ae077-b7ac-45c3-8443-a3ef7e064244
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: S_NATIONKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 96c1823c-683e-4189-aac7-161d67440372
+              stepCounter: 809ae077-b7ac-45c3-8443-a3ef7e064244
+            config: {}
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: S_PHONE
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2c4bf598-fa42-4841-b86d-001dd574ac16
+              stepCounter: 809ae077-b7ac-45c3-8443-a3ef7e064244
+            config: {}
+            dataType: NUMBER(12,2)
+            defaultValue: ""
+            description: ""
+            name: S_ACCTBAL
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2d59aa94-3334-4f37-93e2-998934560b59
+              stepCounter: 809ae077-b7ac-45c3-8443-a3ef7e064244
+            config: {}
+            dataType: VARCHAR(101)
+            defaultValue: ""
+            description: ""
+            name: S_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('CRM2', 'CRM2_SUPPLIER') }}
+      name: CRM2_SUPPLIER
+      schema: ""
+      sqlType: Source
+      table: CRM2_SUPPLIER
+      type: sourceInput
+    stepCounter: 809ae077-b7ac-45c3-8443-a3ef7e064244
