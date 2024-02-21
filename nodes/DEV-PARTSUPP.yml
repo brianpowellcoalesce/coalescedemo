@@ -1,0 +1,94 @@
+steps:
+  PARTSUPP-18f8174a-7bf6-44c3-9753-a76ed39c3477:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: DEV
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 7f4ef62f-de47-4237-b86a-c757c5bf9d0e
+              stepCounter: 18f8174a-7bf6-44c3-9753-a76ed39c3477
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: PS_PARTKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d3086246-a477-4ace-8b07-b35d7953b57e
+              stepCounter: 18f8174a-7bf6-44c3-9753-a76ed39c3477
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: PS_SUPPKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 781148c3-79a3-4414-a923-f0cadee19d50
+              stepCounter: 18f8174a-7bf6-44c3-9753-a76ed39c3477
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: PS_AVAILQTY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: dda88241-24b5-4fba-b1ff-beb6e9cf313f
+              stepCounter: 18f8174a-7bf6-44c3-9753-a76ed39c3477
+            config: {}
+            dataType: NUMBER(12,2)
+            defaultValue: ""
+            description: ""
+            name: PS_SUPPLYCOST
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 423c8a6d-4d83-4a68-99df-bc5fa9b72ab6
+              stepCounter: 18f8174a-7bf6-44c3-9753-a76ed39c3477
+            config: {}
+            dataType: VARCHAR(199)
+            defaultValue: ""
+            description: ""
+            name: PS_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('DEV', 'PARTSUPP') }}
+      name: PARTSUPP
+      schema: ""
+      sqlType: Source
+      table: PARTSUPP
+      type: sourceInput
+    stepCounter: 18f8174a-7bf6-44c3-9753-a76ed39c3477
