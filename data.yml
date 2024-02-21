@@ -18,24 +18,24 @@ jobs:
 locations:
   CRM2:
     mappingDefinitions:
-      "3":
+      "4":
         database: AUSTIN_TEST_DB
         schema: CRM_2
   CRM3:
     mappingDefinitions:
-      "3":
+      "4":
         database: AUSTIN_TEST_DB
         schema: CRM_3
   DEV:
     mappingDefinitions:
-      "3":
+      "4":
         database: COALESCE_SAMPLE_DATABASE
         schema: TPCH_SF001
   STG:
     mappingDefinitions:
-      "3":
-        database: AUSTIN_TEST_DB_PROD
-        schema: EDW_PROD_AW
+      "4":
+        database: BPOWELL_DEV
+        schema: PUBLIC
 macros: {}
 packages:
   SCALEFREE-DATAVAULT4COALESCE:
