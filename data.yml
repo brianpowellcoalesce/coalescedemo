@@ -19,17 +19,17 @@ jobs:
 locations:
   DEV:
     mappingDefinitions:
-      "3":
+      "4":
         database: COALESCE_SAMPLE_DATABASE
         schema: TPCH_SF001
   STG:
     mappingDefinitions:
-      "3":
-        database: AUSTIN_TEST_DB_PROD
-        schema: EDW_PROD
+      "4":
+        database: BPOWELL_DEV
+        schema: PUBLIC
   UNS:
     mappingDefinitions:
-      "3":
+      "4":
         database: COALESCE_SAMPLE_DATABASE
         schema: WEATHER
 macros:
