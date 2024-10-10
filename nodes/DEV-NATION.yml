@@ -1,79 +1,80 @@
-steps:
-  NATION-b2e97d93-e4c0-420a-a08b-3d1e4c5c05d2:
-    operation:
-      database: ""
-      dataset: ""
-      deployEnabled: true
-      description: ""
-      locationID: ""
-      locationName: DEV
-      metadata:
-        columns:
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: d7ee8c79-91be-4de0-aa3f-be8286e14052
-              stepCounter: b2e97d93-e4c0-420a-a08b-3d1e4c5c05d2
-            config: {}
-            dataType: NUMBER(38,0)
-            defaultValue: ""
-            description: ""
-            name: N_NATIONKEY
-            nullable: false
-            primaryKey: false
-            uniqueKey: false
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: c63f789c-aa94-40bd-b5a9-5f7689c360f7
-              stepCounter: b2e97d93-e4c0-420a-a08b-3d1e4c5c05d2
-            config: {}
-            dataType: VARCHAR(25)
-            defaultValue: ""
-            description: ""
-            name: N_NAME
-            nullable: false
-            primaryKey: false
-            uniqueKey: false
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: bd92d44e-a748-4d49-9385-228cbad75915
-              stepCounter: b2e97d93-e4c0-420a-a08b-3d1e4c5c05d2
-            config: {}
-            dataType: NUMBER(38,0)
-            defaultValue: ""
-            description: ""
-            name: N_REGIONKEY
-            nullable: false
-            primaryKey: false
-            uniqueKey: false
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 438839dc-2136-4168-ba0f-2e0836e5c579
-              stepCounter: b2e97d93-e4c0-420a-a08b-3d1e4c5c05d2
-            config: {}
-            dataType: VARCHAR(152)
-            defaultValue: ""
-            description: ""
-            name: N_COMMENT
-            nullable: true
-            primaryKey: false
-            uniqueKey: false
-        join:
-          joinCondition: FROM {{ ref('DEV', 'NATION') }}
-      name: NATION
-      schema: ""
-      sqlType: Source
-      table: NATION
-      type: sourceInput
-    stepCounter: b2e97d93-e4c0-420a-a08b-3d1e4c5c05d2
+fileVersion: 1
+id: b2e97d93-e4c0-420a-a08b-3d1e4c5c05d2
+name: NATION
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: DEV
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d7ee8c79-91be-4de0-aa3f-be8286e14052
+          stepCounter: b2e97d93-e4c0-420a-a08b-3d1e4c5c05d2
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: N_NATIONKEY
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c63f789c-aa94-40bd-b5a9-5f7689c360f7
+          stepCounter: b2e97d93-e4c0-420a-a08b-3d1e4c5c05d2
+        config: {}
+        dataType: VARCHAR(25)
+        defaultValue: ""
+        description: ""
+        name: N_NAME
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bd92d44e-a748-4d49-9385-228cbad75915
+          stepCounter: b2e97d93-e4c0-420a-a08b-3d1e4c5c05d2
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: N_REGIONKEY
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 438839dc-2136-4168-ba0f-2e0836e5c579
+          stepCounter: b2e97d93-e4c0-420a-a08b-3d1e4c5c05d2
+        config: {}
+        dataType: VARCHAR(152)
+        defaultValue: ""
+        description: ""
+        name: N_COMMENT
+        nullable: true
+        primaryKey: false
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('DEV', 'NATION') }}
+  name: NATION
+  schema: ""
+  sqlType: Source
+  table: NATION
+  type: sourceInput
+  version: 1
+type: Node

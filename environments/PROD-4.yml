@@ -1,0 +1,14 @@
+fileVersion: 1
+id: "4"
+mappingDefinitions:
+  DEV:
+    database: COALESCE_SAMPLE_DATABASE
+    schema: TPCH_SF001
+  STG:
+    database: BPOWELL_DEV
+    schema: PUBLIC
+  UNS:
+    database: COALESCE_SAMPLE_DATABASE
+    schema: WEATHER
+name: PROD
+type: Environment

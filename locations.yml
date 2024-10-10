@@ -1,0 +1,6 @@
+defaultStorageMapping: STG
+fileVersion: 1
+locations:
+  - DEV
+  - STG
+  - UNS

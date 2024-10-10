@@ -1,124 +1,125 @@
-steps:
-  SUPPLIER-126e1403-3435-441f-b6f6-554fe146624c:
-    operation:
-      database: ""
-      dataset: ""
-      deployEnabled: true
-      description: ""
-      locationID: ""
-      locationName: DEV
-      metadata:
-        columns:
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 8951d2e0-5f0b-473a-9fec-2c90cb2680d8
-              stepCounter: 126e1403-3435-441f-b6f6-554fe146624c
-            config: {}
-            dataType: NUMBER(38,0)
-            defaultValue: ""
-            description: ""
-            name: S_SUPPKEY
-            nullable: false
-            primaryKey: false
-            uniqueKey: false
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 76a63000-4412-40af-8632-3c5af1b218dd
-              stepCounter: 126e1403-3435-441f-b6f6-554fe146624c
-            config: {}
-            dataType: VARCHAR(25)
-            defaultValue: ""
-            description: ""
-            name: S_NAME
-            nullable: false
-            primaryKey: false
-            uniqueKey: false
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: b07e1e8e-7dca-4fa2-a016-482f3bb1e24e
-              stepCounter: 126e1403-3435-441f-b6f6-554fe146624c
-            config: {}
-            dataType: VARCHAR(40)
-            defaultValue: ""
-            description: ""
-            name: S_ADDRESS
-            nullable: false
-            primaryKey: false
-            uniqueKey: false
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: c3195f82-9866-4b61-a2d8-750b0af605ed
-              stepCounter: 126e1403-3435-441f-b6f6-554fe146624c
-            config: {}
-            dataType: NUMBER(38,0)
-            defaultValue: ""
-            description: ""
-            name: S_NATIONKEY
-            nullable: false
-            primaryKey: false
-            uniqueKey: false
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 7ac99338-8e14-44e5-8c1e-399805a6f171
-              stepCounter: 126e1403-3435-441f-b6f6-554fe146624c
-            config: {}
-            dataType: VARCHAR(15)
-            defaultValue: ""
-            description: ""
-            name: S_PHONE
-            nullable: false
-            primaryKey: false
-            uniqueKey: false
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: cae5e407-9e56-4bc3-945e-499ae9e2f30c
-              stepCounter: 126e1403-3435-441f-b6f6-554fe146624c
-            config: {}
-            dataType: NUMBER(12,2)
-            defaultValue: ""
-            description: ""
-            name: S_ACCTBAL
-            nullable: false
-            primaryKey: false
-            uniqueKey: false
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 00de983b-8fc0-49ef-bce2-656ded96502f
-              stepCounter: 126e1403-3435-441f-b6f6-554fe146624c
-            config: {}
-            dataType: VARCHAR(101)
-            defaultValue: ""
-            description: ""
-            name: S_COMMENT
-            nullable: true
-            primaryKey: false
-            uniqueKey: false
-        join:
-          joinCondition: FROM {{ ref('DEV', 'SUPPLIER') }}
-      name: SUPPLIER
-      schema: ""
-      sqlType: Source
-      table: SUPPLIER
-      type: sourceInput
-    stepCounter: 126e1403-3435-441f-b6f6-554fe146624c
+fileVersion: 1
+id: 126e1403-3435-441f-b6f6-554fe146624c
+name: SUPPLIER
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: DEV
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8951d2e0-5f0b-473a-9fec-2c90cb2680d8
+          stepCounter: 126e1403-3435-441f-b6f6-554fe146624c
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: S_SUPPKEY
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 76a63000-4412-40af-8632-3c5af1b218dd
+          stepCounter: 126e1403-3435-441f-b6f6-554fe146624c
+        config: {}
+        dataType: VARCHAR(25)
+        defaultValue: ""
+        description: ""
+        name: S_NAME
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b07e1e8e-7dca-4fa2-a016-482f3bb1e24e
+          stepCounter: 126e1403-3435-441f-b6f6-554fe146624c
+        config: {}
+        dataType: VARCHAR(40)
+        defaultValue: ""
+        description: ""
+        name: S_ADDRESS
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c3195f82-9866-4b61-a2d8-750b0af605ed
+          stepCounter: 126e1403-3435-441f-b6f6-554fe146624c
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: S_NATIONKEY
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7ac99338-8e14-44e5-8c1e-399805a6f171
+          stepCounter: 126e1403-3435-441f-b6f6-554fe146624c
+        config: {}
+        dataType: VARCHAR(15)
+        defaultValue: ""
+        description: ""
+        name: S_PHONE
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cae5e407-9e56-4bc3-945e-499ae9e2f30c
+          stepCounter: 126e1403-3435-441f-b6f6-554fe146624c
+        config: {}
+        dataType: NUMBER(12,2)
+        defaultValue: ""
+        description: ""
+        name: S_ACCTBAL
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 00de983b-8fc0-49ef-bce2-656ded96502f
+          stepCounter: 126e1403-3435-441f-b6f6-554fe146624c
+        config: {}
+        dataType: VARCHAR(101)
+        defaultValue: ""
+        description: ""
+        name: S_COMMENT
+        nullable: true
+        primaryKey: false
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('DEV', 'SUPPLIER') }}
+  name: SUPPLIER
+  schema: ""
+  sqlType: Source
+  table: SUPPLIER
+  type: sourceInput
+  version: 1
+type: Node
